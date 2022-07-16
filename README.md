@@ -4,6 +4,13 @@
 
 Take a look at some of the **Best** and **Worst** places people have been to! 
 
+## Planning
+### User Stories
+TBD
+
+### Wireframes
+TBD
+
 ## Routes
 
 | Method        | Path                          | Purpose  | 
@@ -18,3 +25,9 @@ Take a look at some of the **Best** and **Worst** places people have been to!
 | DELETE        | /places/:id                   | Delete a particular place                         |
 | POST          | /places/:id/rant              | Create a rant (comment) about a particular place  |
 | DELETE        | /places/:id/rant/:rantId      | Delete a rant (comment) about a particular place  |
+
+## Database
+
+#### Places
+
+#### Rants
