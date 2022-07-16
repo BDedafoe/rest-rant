@@ -4,7 +4,7 @@
 
 Take a look at some of the **Best** and **Worst** places people have been to! 
 
-
+## Routes
 
 | Method        | Path                          | Purpose  | 
 | ------------- | -------------                 | -------- |
