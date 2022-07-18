@@ -12,7 +12,7 @@ app.get('/', (req, res) => {            //homepage
 })
 
 app.get('*', (req, res) => {
-    res.status(404).send('<h1>404 Page</h1>')       //404 page(routes not defined)
+    res.render('error404')       //404 page(routes not defined)
 })
 
 app.listen(process.env.PORT)
