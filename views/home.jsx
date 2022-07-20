@@ -16,13 +16,6 @@ function home () {
                     <button className="btn-primary">Places Page</button>
                 </a>
             </main>
-            <div class="content">
-            <div class="content-inside">
-                <h1>Sticky Footer with Negative Margin 2</h1>
-                 <p><button id="add">Add Content</button></p>
-            </div>
-            </div>
-            <footer class="footer">Footer </footer>
         </Def>
     )
 }
