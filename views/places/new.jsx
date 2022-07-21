@@ -21,7 +21,7 @@ function new_form () {
                     </div>
                     <div className="form-group">
                         <label htmlFor="state">State</label>
-                        <select id="state">State
+                        <select id="state">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>

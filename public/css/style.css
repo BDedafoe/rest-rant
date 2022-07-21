@@ -72,6 +72,7 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
+    
 }
 
 nav li {
@@ -82,6 +83,7 @@ nav li {
 nav a {
     color: white;
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 nav a:hover {
