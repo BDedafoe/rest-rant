@@ -1,8 +1,8 @@
 // Modules and Globals
 require('dotenv').config()
 const express = require('express')
-const app = express()
 const methodOverride = require('method-override')
+const app = express()
 
 // Express Settings
 app.set('views', __dirname + '/views')
@@ -17,6 +17,10 @@ app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
     res.render('home')
+})
+
+app.get('/places', (req, res) => {
+    res.render('edit')
 })
 
 app.get('*', (req, res) => {
