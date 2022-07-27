@@ -1,20 +1,25 @@
-html {
+body {
+    background: lightblue;
     text-align: center;
-  
 }
 
 h1 {
     color: cornflowerblue;
+    text-align: center;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    max-height: 50%;
-
+h2 {
+    color: lightcoral;
+    text-align: center;
 }
+
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
 
 form {
       text-align: left;
@@ -51,14 +56,14 @@ button {
 }
 
 #add:hover {
-    background-color: coral;
+    background-color: lightcoral;
     color: white;
 }
 
 #state {
     margin-bottom: 3px;
     padding: 8px 40px;
-    border-radius: 7px;
+    border-radius: 5px;
     border-color: lightgray;
     display: block;
     box-sizing: border-box;
@@ -87,19 +92,8 @@ nav a {
 }
 
 nav a:hover {
-    color: coral;
+    color: lightcoral;
     text-decoration: none;
 }
 
-/* provided css */
-body {
-    background-color: lightblue;
-    text-align: center;
-  }
-  
-  main {
-    margin-right: 20px;
-    margin-left: 20px;
-    background-color: white;
-  }
   
