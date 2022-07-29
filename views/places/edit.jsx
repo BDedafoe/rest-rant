@@ -24,7 +24,7 @@ function edit_form (data) {
                     </div>
                     <div className="form-group col-sm-6">
                         <label htmlFor="state">State</label>
-                        <select name="state" id="state" defaultValue={place.state}>
+                        <select name="state" id="state" defaultValue={data.place.state}>
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
                         <option value="AZ">AZ</option>
