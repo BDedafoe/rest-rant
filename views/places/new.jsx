@@ -26,13 +26,13 @@ function new_form (data) {
                         <input className="form-control" id="pic" name="pic"/>
                     </div>
                     </div>
-                    <div className="form-group col-sm-4">
                     <div class="row">
+                    <div className="form-group col-sm-4">
                         <label htmlFor="city">City</label>
                         <input className="form-control" id="city" name="city"/>
                     </div>
-                    <div class="col-sm-4">
-                    <div className="form-group">
+                   
+                    <div className="form-group col-sm-4">
                         <label htmlFor="state">State</label>
                         <select name="state" id="state">
                         <option value="AL">AL</option>
@@ -86,19 +86,18 @@ function new_form (data) {
                         <option value="WY">WY</option>
                     </select>
                     </div>
-                    
-                    <div className="form-group">
+                    <div className="form-group col-sm-4">
                         <label htmlFor="founded">Founded Year</label>
                         <input 
                             type="number"
-                            className="form-group"
+                            className="form-control"
                             id="founded"
                             name="founded"
                             value={new Date().getFullYear()}/>
                     </div>
                     </div>
-                    </div>
-                    <div className="form-group col-sm-12">
+                   
+                    <div className="form-group">
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" required/>
                     </div>

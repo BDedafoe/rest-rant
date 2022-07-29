@@ -1,15 +1,18 @@
 body {
     background: lightblue;
     text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h1 {
+    font-family: fantasy, papyrus;
     color: cornflowerblue;
     text-align: center;
 }
 
 h2 {
-    color: lightcoral;
+    color: coral;
     text-align: center;
 }
 
@@ -56,17 +59,27 @@ button {
 }
 
 #add:hover {
-    background-color: lightcoral;
+    background-color: coral;
     color: white;
 }
 
 #state {
     margin-bottom: 3px;
-    padding: 8px 40px;
+    padding: 8px 205px;
     border-radius: 5px;
     border-color: lightgray;
     display: block;
     box-sizing: border-box;
+}
+
+a {
+    color: coral;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    color: cornflowerblue;
 }
 
 nav {
@@ -82,17 +95,18 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
 nav a {
     color: white;
-    font-size: 1.5em;
+    font-family: fantasy, papyrus;
+    font-size: 1.8em;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: lightcoral;
+    color: coral;
     text-decoration: none;
 }
 
