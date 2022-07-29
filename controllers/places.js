@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 // New Added Place to appear on Index page
 router.post('/', (req, res) => {
     if (req.body.pic) {
-        req.body.pic = 'http://placekitten.com/400/400'
+        req.body.pic = 'http://placekitten.com/350/350'
     }
     db.Place.create(req.body)
     .then(() => {
@@ -52,16 +52,36 @@ router.get('/:id', (req, res) => {
   })
 // Upload the edit page to the show.jsx page
 router.put('/:id', (req, res) => {
-    res.send('PUT /places/:id stub')
-  })
-
+    db.Place.findByIdAndUpdate(req.params.id, req.body)
+        .then(() => {
+            res.redirect(`/places/${req.params.id}`)
+        })
+        .catch(err => {
+            console.log('err', err)
+            res.render('error404')
+        })
+})
+// Delete button to delete selected restaraunt
 router.delete('/:id', (req, res) => {
-    res.send('DELETE /places/:id stub')
+    db.Place.findByIdAndDelete(req.params.id)
+        .then(() => {
+            res.redirect('/places')
+        })
+        .catch(err => {
+            console.log('err', err)
+            res.render('error404')
+        })
 })
 // Edit page with form - edit.jsx
 router.get('/:id/edit', (req, res) => {
-    res.send('GET edit form stub')
-  })
+    db.Place.findById(req.params.id)
+        .then(place => {
+            res.render('places/edit', { place })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+})
 
 router.post('/:id/rant', (req, res) => {
     res.send('GET /places/:id/rant stub')

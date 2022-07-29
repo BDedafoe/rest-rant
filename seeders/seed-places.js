@@ -3,16 +3,16 @@ const db = require('../models')
 db.Place.create([{
     name: 'H-Thai-ML',
     city: 'Seattle',
-    state: 'Washington',
+    state: 'WA',
     cuisines: 'Thai, Pan-Asian',
-    pic: '/images/h-thai-ml-tables.jpg',
+    pic: 'public/images/h-thai-ml.jpg',
     founded: 1989
 }, {
     name: 'Coding Cat Cafe',
     city: 'Phoenix',
-    state: 'Arizona',
+    state: 'AZ',
     cuisines: 'Coffee, Bakery',
-    pic: '/images/coffee-cat.jpg',
+    pic: 'public/images/coffee-cat.jpg',
     founded: 2020
 }])
 .then (() => {

@@ -16,19 +16,23 @@ function new_form (data) {
                 <h1>Add a New Place</h1>
                 {message}
                 <form method="POST" action="/places">
-                    <div className="form-group">
+                <div class="row">
+                    <div className="form-group col-sm-6">
                         <label htmlFor="name">Place Name</label>
                         <input className="form-control" id="name" name="name" required/>
                     </div>
-                    <div className="form-group">
+                    <div className="form-group col-sm-6">
                         <label htmlFor="pic">Place Picture</label>
                         <input className="form-control" id="pic" name="pic"/>
                     </div>
-                    <div className="form-group">
+                    </div>
+                    <div className="form-group col-sm-4">
+                    <div class="row">
                         <label htmlFor="city">City</label>
                         <input className="form-control" id="city" name="city"/>
                     </div>
-                    <div className="form-group col-sm-6">
+                    <div class="col-sm-4">
+                    <div className="form-group">
                         <label htmlFor="state">State</label>
                         <select name="state" id="state">
                         <option value="AL">AL</option>
@@ -82,16 +86,19 @@ function new_form (data) {
                         <option value="WY">WY</option>
                     </select>
                     </div>
+                    
                     <div className="form-group">
                         <label htmlFor="founded">Founded Year</label>
                         <input 
                             type="number"
-                            className="form-control"
+                            className="form-group"
                             id="founded"
                             name="founded"
                             value={new Date().getFullYear()}/>
                     </div>
-                    <div className="form-group">
+                    </div>
+                    </div>
+                    <div className="form-group col-sm-12">
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" required/>
                     </div>
