@@ -42,7 +42,9 @@ router.get('/new', (req, res) => {
 // Show.jsx page
 router.get('/:id', (req, res) => {
     db.Place.findById(req.params.id)
+    .populate('comments')
     .then(place => {
+        console.log(place.comments)
         res.render('show', {place})
     })
     .catch(err => {
@@ -83,9 +85,31 @@ router.get('/:id/edit', (req, res) => {
         })
 })
 
-router.post('/:id/rant', (req, res) => {
-    res.send('GET /places/:id/rant stub')
-  })
+router.post('/:id/comment', (req, res) => {
+    console.log('post comment', req.body)
+    if (req.body.author === '') { req.body.author = undefined }
+    req.body.rant = req.body.rant ? true : false
+    db.Place.findById(req.params.id)
+        .then(place => {
+            db.Comment.create(req.body)
+                .then(comment => {
+                    place.comments.push(comment.id)
+                    place.save()
+                        .then(() => {
+                            res.redirect(`/places/${req.params.id}`)
+                        })
+                        .catch(err => {
+                            res.render('error404')
+                        })
+                })
+                .catch(err => {
+                    res.render('error404')
+                })
+        })
+        .catch(err => {
+            res.render('error404')
+        })
+})
 
 router.delete('/:id/rant/:rantID', (req, res) => {
     res.send('GET /places/:id/rant/:rantID stub')
