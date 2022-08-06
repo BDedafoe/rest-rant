@@ -54,7 +54,7 @@ function show (data) {
                         <h2>Rating</h2>
                         {rating}
                         <br />
-                            <h3>Not Rated</h3>
+                         
                         <h2>Description</h2>
                             <h3>{data.place.showEstablished()}</h3>
                                 <h4>Serving {data.place.cuisines}</h4>
@@ -67,11 +67,7 @@ function show (data) {
                 </div>
                 <hr />
             <h2>Comments</h2>
-            <div class="container">
-            <div class="row">
-            <div className="col-sm-4">{comments}</div>
-            </div>
-            </div>
+                <div className="row">{comments}</div>
             <hr />
             <h2>Got Your Own Rant or Rave?</h2>
             <form action={`/places/${data.place.id}/comment`} method="POST">
@@ -90,7 +86,7 @@ function show (data) {
                   <label htmlFor="stars">Star Rating</label>
                   <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control" />
                 </div>
-                <div className="form-group col-sm-2">
+                <div className="form-group col-sm-3">
                   <label htmlFor="rant">Rant?</label>
                   <input class="form-check-input" type="checkbox" value=" " id="rant" name="rant" className="form-control" />
                 </div>
