@@ -32,7 +32,7 @@ function Def (html) {
                      <button id="add">Facebook</button></a>
                  <a href="https://instagram.com/deda_woah">
                      <button id="add">Instagram</button></a>
-                 <a href="https://linkedin.com/in/brittany-dedafoe-991933199">
+                 <a href="https://linkedin.com/in/BDedafoe">
                      <button id="add">LinkedIn</button></a>
             </div>
             </div>

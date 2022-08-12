@@ -80,18 +80,18 @@ function show (data) {
               <div className="row">
                 <div className="form-group col-sm-4">
                   <label htmlFor="author">Author</label>
-                  <input id="author" name="author" className="form-control" />
+                  <input id="author" name="author" className="form-control"/>
                 </div>
                 <div className="form-group col-sm-4">
-                  <label htmlFor="stars">Star Rating</label>
-                  <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control" />
+                  <label htmlFor="stars" class="form-range">Star Rating</label>
+                  <input type="range" step="0.5" min="1" max="5" id="stars" name="stars"  />
                 </div>
-                <div className="form-group col-sm-3">
-                  <label htmlFor="rant">Rant?</label>
-                  <input class="form-check-input" type="checkbox" value=" " id="rant" name="rant" className="form-control" />
+                <div className="form-group col-sm-2">
+                  <label htmlFor="rant" class="form-check-label">Rant?</label>
+                  <input type="checkbox" id="rant" name="rant" className="form-check-input" />
                 </div>
               </div>
-              <input type="submit" className="btn btn-primary" value="Add Comment" />
+              <input type="submit" className="btn btn-primary" value="Add Comment"/>
             </form>
           </main>
         </Def>

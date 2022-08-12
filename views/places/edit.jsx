@@ -24,7 +24,7 @@ function edit_form (data) {
                     </div>
                     <div className="form-group col-sm-4">
                         <label htmlFor="state">State</label>
-                        <select name="state" id="state" defaultValue={data.place.state}>
+                        <select name="state" className="form-control" id="state" defaultValue={data.place.state}>
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
                         <option value="AZ">AZ</option>
@@ -85,7 +85,9 @@ function edit_form (data) {
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" value={data.place.cuisines} required/>
                     </div>
+                    <div>
                         <input className="btn btn-primary" type="submit" value="Update Place"/>
+                    </div>
                 </form>
             </main>
         </Def>

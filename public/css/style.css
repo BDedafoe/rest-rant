@@ -16,27 +16,19 @@ h2 {
 }
 
 main {
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px;
     background-color: white;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+form {
+    display: inline;
+    padding: 10px;
 }
 
-.form {
-      padding: 20px;
-      display: inline;
-      box-sizing: border-box;
-}
-
-button {
-      margin-top: 15px;
+.btn.btn-primary {
+    margin-top: 10px;
 }
 
 #add {
@@ -55,21 +47,14 @@ button {
 
 .form-check-input {
     display: block;
-    height: 30px;
-    padding: 8px 180px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px 100px 5px;
     border-radius: 5px;
     
 }
 
-#state {
-    margin-bottom: 3px;
-    padding: 8px 185px;
-    border-radius: 5px;
-    border-color: lightgray;
-    display: block;
-    box-sizing: border-box;
-}
-
+/* Link Style */
 a {
     color: coral;
     text-decoration: none;
@@ -80,6 +65,8 @@ a:hover {
     color: cornflowerblue;
 }
 
+
+/* Nav Bar */
 nav {
     background-color: cornflowerblue;
     padding: 10px;
@@ -125,6 +112,3 @@ nav a:hover {
     margin-top: 10%;
 }
 
-.stars {
-    color: red;
-}

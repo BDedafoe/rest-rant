@@ -34,7 +34,7 @@ function new_form (data) {
                    
                     <div className="form-group col-sm-4">
                         <label htmlFor="state">State</label>
-                        <select name="state" id="state">
+                        <select name="state" className="form-control" id="state">
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>
                         <option value="AZ">AZ</option>
